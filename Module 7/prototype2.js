@@ -13,5 +13,5 @@ let per = new Person('James', 34)
 
 let per4 = new Person('Karthik', 45)
 
-console.log(per);
+console.log(per.getNameAndAge);
 console.log(per4)

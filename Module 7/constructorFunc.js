@@ -28,3 +28,41 @@ let car2 = new createCar('modelx', 'Tesla', 'Red');
 console.log(car2);
 
 car1.drive();
+
+
+//examples:
+// function Person(firstName, lastName) {
+//     this.firstName = firstName,
+//     this.lastName = lastName
+// }
+
+// const member = new Person('sisdf', 'thgf');
+// Person.getFullName = function() {
+//     return `${this.firstName} ${lastName}`;
+// };
+// console.log(member.getFullName());
+
+//examples:
+function Person1(firstName, lastName) {
+    this.firstName = firstName,
+    this.lastName = lastName
+}
+
+const lydia = new Person1('Lydia', 'steve');
+const sarah = Person1('Sarah', 'Smith');
+console.log(lydia);
+console.log(sarah);
+
+
+//example:
+const bird = {
+    size: 'small'
+}
+
+const mouse = {
+    name: 'Mickey',
+    small: true
+};
+// console.log(mouse.bird.size); //not valid
+console.log(mouse[bird.size]); //true
+console.log(mouse[bird['size']])//true
